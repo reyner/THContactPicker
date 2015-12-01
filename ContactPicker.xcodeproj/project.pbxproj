@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15B81F011C0E3D4A00852505 /* THContactPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B81F001C0E3D4A00852505 /* THContactPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B81F071C0E3D5700852505 /* THContactViewStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3B2DF1183267B900798513 /* THContactViewStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B81F081C0E3D5C00852505 /* THContactViewStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3B2DF2183267B900798513 /* THContactViewStyle.m */; };
+		15B81F091C0E3D5E00852505 /* THContactView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3B2DF3183267B900798513 /* THContactView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B81F0A1C0E3D6200852505 /* THContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3B2DF4183267B900798513 /* THContactView.m */; };
+		15B81F0B1C0E3D6400852505 /* THContactPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B3B2DF5183267B900798513 /* THContactPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B81F0C1C0E3D6800852505 /* THContactPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3B2DF6183267B900798513 /* THContactPickerView.m */; };
+		15B81F0D1C0E3D6C00852505 /* THContactTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D951FBF19222B6800EFAAB4 /* THContactTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B81F0E1C0E3D6F00852505 /* THContactTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D951FC019222B6800EFAAB4 /* THContactTextField.m */; };
 		29A71BE81644824F005286F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A71BE71644824F005286F1 /* UIKit.framework */; };
 		29A71BEA1644824F005286F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A71BE91644824F005286F1 /* Foundation.framework */; };
 		29A71BEC1644824F005286F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A71BEB1644824F005286F1 /* CoreGraphics.framework */; };
@@ -28,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B81EFE1C0E3D4A00852505 /* THContactPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = THContactPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15B81F001C0E3D4A00852505 /* THContactPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THContactPicker.h; sourceTree = "<group>"; };
+		15B81F021C0E3D4A00852505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A71BE31644824F005286F1 /* ContactPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A71BE71644824F005286F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		29A71BE91644824F005286F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +70,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		15B81EFA1C0E3D4A00852505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A71BE01644824F005286F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,10 +91,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15B81EFF1C0E3D4A00852505 /* THContactPicker */ = {
+			isa = PBXGroup;
+			children = (
+				15B81F001C0E3D4A00852505 /* THContactPicker.h */,
+				15B81F021C0E3D4A00852505 /* Info.plist */,
+			);
+			path = THContactPicker;
+			sourceTree = "<group>";
+		};
 		29A71BD81644824F005286F1 = {
 			isa = PBXGroup;
 			children = (
 				29A71BED1644824F005286F1 /* ContactPicker */,
+				15B81EFF1C0E3D4A00852505 /* THContactPicker */,
 				29A71BE61644824F005286F1 /* Frameworks */,
 				29A71BE41644824F005286F1 /* Products */,
 			);
@@ -85,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				29A71BE31644824F005286F1 /* ContactPicker.app */,
+				15B81EFE1C0E3D4A00852505 /* THContactPicker.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,7 +177,40 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		15B81EFB1C0E3D4A00852505 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B81F0B1C0E3D6400852505 /* THContactPickerView.h in Headers */,
+				15B81F071C0E3D5700852505 /* THContactViewStyle.h in Headers */,
+				15B81F091C0E3D5E00852505 /* THContactView.h in Headers */,
+				15B81F0D1C0E3D6C00852505 /* THContactTextField.h in Headers */,
+				15B81F011C0E3D4A00852505 /* THContactPicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		15B81EFD1C0E3D4A00852505 /* THContactPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15B81F051C0E3D4A00852505 /* Build configuration list for PBXNativeTarget "THContactPicker" */;
+			buildPhases = (
+				15B81EF91C0E3D4A00852505 /* Sources */,
+				15B81EFA1C0E3D4A00852505 /* Frameworks */,
+				15B81EFB1C0E3D4A00852505 /* Headers */,
+				15B81EFC1C0E3D4A00852505 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THContactPicker;
+			productName = THContactPicker;
+			productReference = 15B81EFE1C0E3D4A00852505 /* THContactPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		29A71BE21644824F005286F1 /* ContactPicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29A71C0116448250005286F1 /* Build configuration list for PBXNativeTarget "ContactPicker" */;
@@ -173,6 +236,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Tristan Himmelman";
+				TargetAttributes = {
+					15B81EFD1C0E3D4A00852505 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
 			};
 			buildConfigurationList = 29A71BDD1644824F005286F1 /* Build configuration list for PBXProject "ContactPicker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -187,11 +255,19 @@
 			projectRoot = "";
 			targets = (
 				29A71BE21644824F005286F1 /* ContactPicker */,
+				15B81EFD1C0E3D4A00852505 /* THContactPicker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		15B81EFC1C0E3D4A00852505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A71BE11644824F005286F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -209,6 +285,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		15B81EF91C0E3D4A00852505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15B81F0E1C0E3D6F00852505 /* THContactTextField.m in Sources */,
+				15B81F081C0E3D5C00852505 /* THContactViewStyle.m in Sources */,
+				15B81F0C1C0E3D6800852505 /* THContactPickerView.m in Sources */,
+				15B81F0A1C0E3D6200852505 /* THContactView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		29A71BDF1644824F005286F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +324,83 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		15B81F031C0E3D4A00852505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = THContactPicker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = be.reyner.THContactPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		15B81F041C0E3D4A00852505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = THContactPicker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = be.reyner.THContactPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		29A71BFF16448250005286F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -322,6 +486,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		15B81F051C0E3D4A00852505 /* Build configuration list for PBXNativeTarget "THContactPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15B81F031C0E3D4A00852505 /* Debug */,
+				15B81F041C0E3D4A00852505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		29A71BDD1644824F005286F1 /* Build configuration list for PBXProject "ContactPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
