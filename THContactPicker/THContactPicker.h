@@ -14,6 +14,7 @@ FOUNDATION_EXPORT double THContactPickerVersionNumber;
 //! Project version string for THContactPicker.
 FOUNDATION_EXPORT const unsigned char THContactPickerVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <THContactPicker/PublicHeader.h>
-
-
+#import "THContactViewStyle.h"
+#import "THContactView.h"
+#import "THContactPickerView.h"
+#import "THContactTextField.h"
